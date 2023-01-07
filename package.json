@@ -1,0 +1,29 @@
+{
+  "name": "@lucafabbian/pulumi",
+  "private": "false",
+  "version": "0.0.1",
+  "description": "Pulumi binaries installer",
+  "bin": {
+    "pulumi": "./bin/pulumi"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucafabbian/pulumi.git"
+  },
+  "keywords": [
+    "pulumi"
+  ],
+  "author": "Luca Fabbian <luca.fabbian.1999@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lucafabbian/pulumi/issues"
+  },
+  "homepage": "https://github.com/lucafabbian/pulumi#readme",
+  "dependencies": {
+    "tar": "^6.1.13"
+  }
+}
