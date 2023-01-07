@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Pulumi binaries installer",
   "bin": {
-    "pulumi": "./bin/pulumi"
+    "pulumi": "./bin/pulumi/pulumi"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/lucafabbian/pulumi#readme",
   "dependencies": {
+    "decompress": "^4.2.1",
     "tar": "^6.1.13"
   }
 }
