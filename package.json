@@ -1,14 +1,19 @@
 {
   "name": "@lucafabbian/pulumi",
-  "private": "false",
-  "version": "0.0.1",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "version": "0.0.2",
   "description": "Pulumi binaries installer",
   "bin": {
     "pulumi": "./bin/pulumi/pulumi"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node index.js"
+    "prepublishOnly": "node clean.js",
+    "postinstall": "node install.js"
   },
   "repository": {
     "type": "git",
